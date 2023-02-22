@@ -1,0 +1,36 @@
+{
+    "name": "Image Steganography Plugin",
+    "version": "0.0.1",
+    "description": "Adding secret messages to your Images",
+    "permissions": ["activeTab","storage", "tabs"], //Host permissions
+    "host_permissions": ["https://*.whatsapp.com/*"],
+    /*"background": {
+      "service_worker": "background.js" //js file which works separate from the plugin
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.whatsapp.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],*/
+    /*"web_accessible_resources": [
+      {
+        /*"resources": [
+          "assets/bookmark.png",
+          "assets/play.png",
+          "assets/delete.png",
+          "assets/save.png"
+        ],
+        "matches": ["https://*.whatsapp.com/*"]
+      }
+    ],*/
+    "action": {
+      "default_icon": "logo.png",
+      "default_title": "WhatsApp Image Steganography",
+      "default_popup": "popup.html"
+    },
+    "icons":{
+      "128": "logo.png"
+    },
+    "manifest_version": 3
+  }
